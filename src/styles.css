@@ -3,27 +3,53 @@ body {
 }
 .container {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 60px auto;
   background: white;
   padding: 30px;
-  margin: 60px;
   display: block;
   border-radius: 15px;
-  box-shadow: 2px 2px 2px 1px rgba(211 211 211 / 40%);
+  box-shadow: 3px 3px 3px 2px rgba(211 211 211 / 40%);
 }
 h1 {
   position: relative;
   top: -20px;
 }
-#city {
+#city-selector {
   width: 100%;
   padding: 10px;
   display: block;
-  border-radius: 10px;
+  border-radius: 6px;
   margin: auto;
   border: 5px solid #f7f7fc;
 }
 .city {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid rgb(168 164 164 / 60%);
+}
+.city:last-child {
+  border: none;
+}
+H2 {
+  margin: 20px 0 10px 0;
+}
+.date {
+  opacity: 0.5;
+}
+.time {
+  margin: 20px;
+  font-weight: bold;
+  font-size: 48px;
+}
+.time small {
+  font-size: 24px;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  color: #7433b1;
+  opacity: 0.8;
+}
+footer a {
+  opacity: 1;
 }
