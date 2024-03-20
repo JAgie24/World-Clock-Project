@@ -35,7 +35,8 @@ function updateCity(event) {
         <div class="time">${cityTime.format(
           "h:mm:ss [<small>]A[</small>]"
         )}</div>
-        </div>`;
+        </div>
+        <a href="https://world-clock-project-oja.netlify.app/">All Cities</a>`;
 }
 
 updateTime();
