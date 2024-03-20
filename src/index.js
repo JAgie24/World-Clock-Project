@@ -16,6 +16,15 @@ function updateTime() {
   sydneyTime.innerHTML = sydneyMoment
     .tz("Australia/Sydney")
     .format("h:mm:ss [<small>]A[</small]");
+
+  let paris = document.querySelector("#paris");
+  let parisDate = paris.querySelector(".date");
+  let parisTime = paris.querySelector(".time");
+  let parisMoment = moment();
+  parisDate.innerHTML = parisMoment.format("MMMM Do YYYY");
+  parisTime.innerHTML = parisMoment
+    .tz("Europe/Paris")
+    .format("h:mm:ss [<small>]A[</small]");
 }
 
 function updateCity(event) {
